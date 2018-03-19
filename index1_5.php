@@ -135,12 +135,11 @@ echo $mode;
                     <div class="overlay" id='<?php echo substr($value2, 0, -4);?>_overlay'>
 
                         <div class="align-middle row">
-                            <div class="col-lg-3 text-center" ></div>
-                            <div class="col-lg-2 text-center" ><h4 class="rating_input" onClick="rate(0,this)">0</h4></div>
-                            <div class="col-lg-2 text-center" ><h4 class="rating_input" onClick="rate(1,this)">1</h4></div>
-                            <div class="col-lg-2 text-center" ><h4 class="rating_input" onClick="rate(2,this)">2</h4></div>
-                            <div class="col-lg-3 text-center" ></div>
-
+                            <div class="col-lg-2 text-center" ><h4 class="rating_input" onClick="rate(0,this)">1</h4></div>
+                            <div class="col-lg-2 text-center" ><h4 class="rating_input" onClick="rate(1,this)">2</h4></div>
+                            <div class="col-lg-2 text-center" ><h4 class="rating_input" onClick="rate(2,this)">3</h4></div>
+                            <div class="col-lg-2 text-center" ><h4 class="rating_input" onClick="rate(3,this)">4</h4></div>
+                            <div class="col-lg-2 text-center" ><h4 class="rating_input" onClick="rate(4,this)">5</h4></div>
                         </div>
 
                     </div>
@@ -221,7 +220,7 @@ echo $mode;
             out+=array[i].rating;
         }
         //  out= Math.round(out * 1.0 / 40.0) *100
-        return Math.round((out/40)*100);
+        return Math.round((out/80)*100);
     }
     function sum_rating_10(array)
     {
@@ -233,7 +232,7 @@ echo $mode;
             out+=array[i].rating;
         }
         //  out= Math.round(out * 1.0 / 40.0) *100
-        return Math.round((out/20)*100);
+        return Math.round((out/40)*100);
     }
     function sum_rating_5(array)
     {
@@ -246,7 +245,7 @@ echo $mode;
         }
 
         //  out= Math.round(out * 1.0 / 40.0) *100
-        return Math.round((out/10)*100);
+        return Math.round((out/20)*100);
     }
     function couple(image,rating)
     {
