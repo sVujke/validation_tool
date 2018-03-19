@@ -1,8 +1,10 @@
 # Simmilar Image Recommender - Validation Tool
 
-# How it Works
+## How it Works
 
 This tool was built in order to facilitate the process of survaying people in order to compare different aproaches for recommending similar images for a particular image. 
+
+![alt text](https://github.com/sVujke/validation_tool/blob/master/images_for_readme/interface.PNG "Validation Tool Interface")
 
 The user selects:
 
@@ -25,20 +27,23 @@ NOTE! Manualy move the saved output to a new folder as the system will override 
 ```
 
 
-# Data Requirements
+## Data Requirements
 
 * Provide csv files with **indices** you want to compare in the `data/data_input/` directory. Incices row should be in form:
 `0000.jpg, ... ,0020.jpg` where image at i=0 is the to be selected image and images i>0 are coresponding similar images.
+![alt text](https://github.com/sVujke/validation_tool/blob/master/images_for_readme/selected_img.PNG "Validation Tool Interface")
 * Provide images (for wich recommended similar images will be shown) in the  `data/images_input/` directory.
 * Provide all images on which the KNN or ANN query was performed in the `data/images_database/`directory in order for all similar images to be rendered.
+![alt text](https://github.com/sVujke/validation_tool/blob/master/images_for_readme/sim_images.PNG "Validation Tool Interface")
 
 
-# Requirements
+
+## Requirements
 
 * PHP 
 * JavaScript 
 
-# Authors 
+## Authors 
 * @aelkindy
 * @shohelahamad
 * @sVujke
